@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Ops Platform</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-dot"></span>
+      <span>AI Ops Platform</span>
+    </div>
+    <div class="topbar-right">
+      <span id="backend-badge" class="badge">connecting…</span>
+      <button id="refresh-btn" class="btn-ghost">Refresh</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="incident-list" id="incident-list">
+      <div class="empty-state">Loading incidents…</div>
+    </section>
+
+    <section class="incident-detail" id="incident-detail">
+      <div class="empty-state">Select an incident to see details and AI diagnosis.</div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
